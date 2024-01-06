@@ -18,5 +18,12 @@
 
 
 # #### Exercise 3
-list_a=input('write numbers that seprated with space:\n').split()
-print([int(x) for x in list_a if int(x)<10])
+# list_a=input('write numbers that seprated with space:\n').split()
+# print([int(x) for x in list_a if int(x)<10])
+
+# #### Exercise 4 - Divisors
+num,divisor_list=int(input('Please enter a number:\n')),[]
+for i in range(1,(num//2)+1):
+    if num%i==0: divisor_list.append(i)
+divisor_list.append(num)
+print(divisor_list)
