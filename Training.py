@@ -29,7 +29,16 @@
 # print(divisor_list)
 
 # #### Exercise 5 
-lis_a,lis_b,lis_similars = range(0,4),range(2,10),[]
-for i in lis_a:
-    if i in lis_b: lis_similars.append(i)
-print (lis_similars) 
+# lis_a,lis_b,lis_similars = range(0,4),range(2,10),[]
+# for i in lis_a:
+#     if i in lis_b: lis_similars.append(i)
+# print (lis_similars) 
+
+# #### Exercise 6
+var_str,polindrome=list(input('please write a word:\n')),0
+for i in range(0,len(var_str)):
+    if var_str[i] != var_str[-(i+1)]:
+        print("It's NOT a PALINDROME word")
+        polindrome=1
+        break
+if polindrome==0: print("It's a POLINDROME word")
