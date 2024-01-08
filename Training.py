@@ -35,10 +35,13 @@
 # print (lis_similars) 
 
 # #### Exercise 6
-var_str,polindrome=list(input('please write a word:\n')),0
-for i in range(0,len(var_str)):
-    if var_str[i] != var_str[-(i+1)]:
-        print("It's NOT a PALINDROME word")
-        polindrome=1
-        break
-if polindrome==0: print("It's a POLINDROME word")
+# var_str,polindrome=list(input('please write a word:\n')),0
+# for i in range(0,len(var_str)):
+#     if var_str[i] != var_str[-(i+1)]:
+#         print("It's NOT a PALINDROME word")
+#         polindrome=1
+#         break
+# if polindrome==0: print("It's a POLINDROME word")
+
+x= input('a word:\n')
+print('PLINDROME') if x==x[::-1] else print('NOT POLYNDRONE')
