@@ -43,5 +43,20 @@
 #         break
 # if polindrome==0: print("It's a POLINDROME word")
 
-x= input('a word:\n')
-print('PLINDROME') if x==x[::-1] else print('NOT POLYNDRONE')
+# x= input('a word:\n')
+# print('PLINDROME') if x==x[::-1] else print('NOT POLYNDRONE')
+
+# #### Exercise 7
+# a_list=[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+# even_numbers=[i for i in a_list if i%2==0]
+# print(even_numbers)
+
+# #### Exercise 8
+conditions=[['r','s'],['p','r'],['s','p']]
+while True:
+    player_a,player_b=input('Player 1: please choose R for rock,P for paper,os S for scissors ').lower(),input('Player 2: please choose R for rock,P for paper,os S for scissors ').lower()
+    var_x=[player_a,player_b]
+    if var_x in conditions: print('player 1 win!')
+    elif var_x[::-1] in conditions: print('player 2 win!')
+    else: print('draw!')
+    if input('Wanna play again?\n(press yes/no and enter)').lower()== 'no':break
