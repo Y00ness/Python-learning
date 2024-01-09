@@ -52,11 +52,23 @@
 # print(even_numbers)
 
 # #### Exercise 8
-conditions=[['r','s'],['p','r'],['s','p']]
+# conditions=[['r','s'],['p','r'],['s','p']]
+# while True:
+#     player_a,player_b=input('Player 1: please choose R for rock,P for paper,os S for scissors ').lower(),input('Player 2: please choose R for rock,P for paper,os S for scissors ').lower()
+#     var_x=[player_a,player_b]
+#     if var_x in conditions: print('player 1 win!')
+#     elif var_x[::-1] in conditions: print('player 2 win!')
+#     else: print('draw!')
+#     if input('Wanna play again?\n(press yes/no and enter)').lower()== 'no':break
+
+# #### Exercise 9
+import random
+
+var_random=random.randint(1,9)
 while True:
-    player_a,player_b=input('Player 1: please choose R for rock,P for paper,os S for scissors ').lower(),input('Player 2: please choose R for rock,P for paper,os S for scissors ').lower()
-    var_x=[player_a,player_b]
-    if var_x in conditions: print('player 1 win!')
-    elif var_x[::-1] in conditions: print('player 2 win!')
-    else: print('draw!')
-    if input('Wanna play again?\n(press yes/no and enter)').lower()== 'no':break
+    guess_num=int(input('Please guess the number between 0 to 10: '))
+    if guess_num<var_random: print('too low! try again.', end=' ')
+    elif guess_num>var_random: print('too high! try again.', end=' ')
+    else:
+        print('Exactly right!')
+        break
