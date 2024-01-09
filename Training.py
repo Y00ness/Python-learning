@@ -62,13 +62,22 @@
 #     if input('Wanna play again?\n(press yes/no and enter)').lower()== 'no':break
 
 # #### Exercise 9
+# import random
+
+# var_random=random.randint(1,9)
+# while True:
+#     guess_num=int(input('Please guess the number between 0 to 10: '))
+#     if guess_num<var_random: print('too low! try again.', end=' ')
+#     elif guess_num>var_random: print('too high! try again.', end=' ')
+#     else:
+#         print('Exactly right!')
+#         break
+
+# #### Exercise 10
 import random
 
-var_random=random.randint(1,9)
-while True:
-    guess_num=int(input('Please guess the number between 0 to 10: '))
-    if guess_num<var_random: print('too low! try again.', end=' ')
-    elif guess_num>var_random: print('too high! try again.', end=' ')
-    else:
-        print('Exactly right!')
-        break
+first_list=random.sample(range(20),10)
+second_list=random.sample(range(20),15)
+print(first_list,second_list)
+res_list=[i for i in first_list if i in second_list]
+print(res_list)
