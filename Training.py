@@ -83,6 +83,3 @@
 # print(res_list)
 
 # #### Exercise 11
-x=5
-x= x>>3
-print(x)
