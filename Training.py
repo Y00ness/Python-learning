@@ -74,10 +74,15 @@
 #         break
 
 # #### Exercise 10
-import random
+# import random
 
-first_list=random.sample(range(20),10)
-second_list=random.sample(range(20),15)
-print(first_list,second_list)
-res_list=[i for i in first_list if i in second_list]
-print(res_list)
+# first_list=random.sample(range(20),10)
+# second_list=random.sample(range(20),15)
+# print(first_list,second_list)
+# res_list=[i for i in first_list if i in second_list]
+# print(res_list)
+
+# #### Exercise 11
+x=5
+x= x>>3
+print(x)
