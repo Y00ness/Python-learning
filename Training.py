@@ -83,4 +83,27 @@
 # print(res_list)
 
 # #### Exercise 11
-client_number = input("Please add a number to find out if it's prime or not:")
+
+def check_prime(prime,divide_num,sqr_client_num,client_number):
+    while prime == True:
+        divide_num += 2;
+        if divide_num > sqr_client_num: break
+        if client_number%divide_num == 0:
+            prime = False;
+            break
+
+
+client_number = int(input("Please add a number to find out if it's prime or not:"))
+sqr_client_num = int(client_number**(1/2))
+prime_num,divide_num,prime = [2,3,5,7,11,13,17,19],1,True
+
+if client_number in prime_num :
+    prime = True;
+else:
+    for i in prime_num:
+        if client_number%i == 0:
+            prime = False
+            break
+    check_prime(prime,divide_num,sqr_client_num,client_number);        
+
+print('It\'s a prime number!') if prime == True else print('It\'s not a prime number')
