@@ -83,4 +83,4 @@
 # print(res_list)
 
 # #### Exercise 11
-j
+client_number = input("Please add a number to find out if it's prime or not:")
