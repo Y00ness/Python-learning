@@ -112,5 +112,7 @@
 client_number = int(input("Please add a number to find out if it's prime or not:"))
 sqr_client_num = int(client_number**(1/2))
 
-if sum([True if client_number%2==0 else True for i in range(3,sqr_client_num+1,2) if client_number%i==0]): print('NOT PRIME');
-else: print('YES,It\'s PRIME');
+# if sum([True if client_number%2==0 else True for i in range(3,sqr_client_num+1,2) if client_number%i==0]): print('NOT PRIME');
+# else: print('YES,It\'s PRIME');
+
+print('NOT PRIME') if any(client_number%i == 0 for i in ([2]+list(range(3,sqr_client_num+1,2)))) else print('YES PERIME') 
